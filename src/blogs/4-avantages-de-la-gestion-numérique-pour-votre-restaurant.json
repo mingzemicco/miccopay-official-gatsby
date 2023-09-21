@@ -1,0 +1,19 @@
+{
+  "order": 1,
+  "slug": "4-avantages-de-la-gestion-numerique-pour-votre-restaurant",
+  "title": "4 Avantages de la gestion numérique pour votre restaurant",
+  "category": "Restauration Digitale",
+  "tags": ["gestionnumérique"],
+  "date": "13 Septembre 2023",
+  "subtitle": "Découvrez comment la caisse enregistreuse numérique révolutionne l'industrie de la restauration grâce à ses multiples avantages.",
+  "content": [
+    {
+      "tag": "h2",
+      "content": "Introduction"
+    },
+    {
+      "tag": "p",
+      "content": "Depuis le 1er janvier 2018, une réglementation visant à contrer la fraude à la TVA est en vigueur, s'appliquant à tous les professionnels assujettis à la TVA qui enregistrent les paiements de leurs clients à l'aide de logiciels ou de systèmes de caisse. Pour être en conformité, les restaurateurs doivent obtenir un certificat ou une attestation de conformité appelée « NF525 ». Cette certification peut être délivrée par un organisme accrédité ou par l'éditeur du logiciel de caisse. Il est crucial de vérifier que le logiciel que les restaurants utilisent est certifié, sous peine de devoir faire face à des amendes pouvant aller jusqu'à 7500 euros. "
+    }
+  ]
+}

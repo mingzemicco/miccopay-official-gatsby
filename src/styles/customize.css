@@ -1,0 +1,132 @@
+.site-header .miccopay-logo {
+}
+
+.site-header .logo-subtitle {
+  color: white;
+  font-size: 12px;
+  transform: scale(0.8);
+  left: 53px;
+  bottom: -10px;
+}
+
+.site-header .logo-subtitle .micco-logo {
+  max-height: 20px;
+}
+
+.site-header.lqd-is-sticky .logo-subtitle {
+  color: #7842eb;
+}
+
+.site-header.lqd-is-sticky .logo-subtitle .primary {
+  display: none;
+}
+
+.site-header.lqd-is-sticky .logo-subtitle .hidden {
+  display: block;
+}
+
+#explanation .content .group p.title {
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+#explanation .content .group p.content {
+  font-size: 14px;
+}
+
+#testimonials img.community-partner-logo {
+}
+
+#testimonials .height-24 {
+  height: 24px;
+}
+
+#testimonials .height-29 {
+  height: 29px;
+}
+
+footer #contact-form-wrapper {
+  padding: 10px 0;
+}
+
+footer #contact-form-wrapper .input-wrapper {
+  color: #000;
+  border-radius: 20px;
+  background: #fff;
+  padding: 12px 16px;
+  margin: 20px auto 0;
+  max-width: 400px;
+}
+
+footer #contact-form-wrapper .input-wrapper input {
+  width: 220px;
+}
+
+footer .restaurant-qr-links a {
+  width: 24%;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+footer .restaurant-qr-links a:hover {
+  transform: scale(1.05);
+}
+
+footer .qui-sommes-nous .content div {
+  margin-bottom: 10px;
+}
+
+footer .qui-sommes-nous .content ul {
+  margin-bottom: 10px;
+}
+
+footer .qui-sommes-nous ul {
+  margin-left: 10px;
+}
+
+footer .qui-sommes-nous .content li {
+  list-style-type: initial;
+  margin-left: 10px;
+}
+
+#menu img.menu-img {
+  max-width: 58px;
+}
+
+@media screen and (max-width: 576px) {
+  .sm\:w-50p {
+    width: 49% !important;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
+  }
+
+  .sm\:fSize-36 {
+    font-size: 36px;
+  }
+
+  .sm\:size-36 {
+    width: 36px;
+    height: 36px;
+  }
+
+  .site-header .logo-subtitle {
+    left: 0;
+    transform: scale(0.7);
+    bottom: -18px;
+    width: max-content;
+  }
+}
+
+.bg-\[\#BA6EF4\] {
+  background: #ba6ef4;
+}
+
+.google-ads-728 {
+  width: 100%;
+  max-width: 728px;
+  height: auto;
+}

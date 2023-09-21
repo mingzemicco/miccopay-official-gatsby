@@ -1,0 +1,1 @@
+window.liquid = { isLandingPage: true };
