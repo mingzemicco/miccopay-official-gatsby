@@ -1,0 +1,19 @@
+{
+  "order": 3,
+  "slug": "just-for-test",
+  "title": "Just for test",
+  "category": "Test",
+  "tags": ["gestionnumérique"],
+  "date": "13 Septembre 2023",
+  "subtitle": "Découvrez comment la caisse enregistreuse numérique révolutionne l'industrie de la restauration grâce à ses multiples avantages.",
+  "content": [
+    {
+      "tag": "h2",
+      "content": "Test"
+    },
+    {
+      "tag": "p",
+      "content": "This is just for test."
+    }
+  ]
+}
