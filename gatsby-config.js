@@ -14,13 +14,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'blogs',
-        path: `${__dirname}/src/blogs/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'blogImages',
         path: `${__dirname}/src/images/blog/`,
       },
