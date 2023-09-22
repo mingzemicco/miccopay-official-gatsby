@@ -1,56 +1,29 @@
-const path = require(`path`)
+const path = require(`path`);
+const { getConfigFromGSheet, Title } = require('./src/sources/gSheet');
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ actions }) => {
 
-  const { data } = await graphql(`
-    query AllBlogPages {
-      blogs: allBlogsJson {
-        nodes {
-          category
-          date
-          title
-          tags
-          subtitle
-          slug
-          content {
-            content
-            tag
-          }
-        }
-      }
-  
-      images: allImageSharp {
-        edges {
-          node {
-            fluid {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
-            }
-          }
-        }
-      }
+  const rows = await getConfigFromGSheet();
 
-    }
-  `)
+  actions.createPage({
+    path: '/',
+    component: path.resolve('./src/templates/indexPage.js'),
+    context: { blogInfo: rows.slice(0, 3) },
+  });
 
-  const { blogs: { nodes }, images: { edges } } = data;
-  const fluids = edges.map(edge => edge.node.fluid);
-  for (const node of nodes) {
-    const idx = fluids.findIndex(fluid => fluid.src.includes(node.slug));
-    if (idx >= 0) {
-      node.fluid = fluids[idx];
-      fluids.splice(idx, 1);
-    }
-  }
+  actions.createPage({
+    path: '/blogs',
+    component: path.resolve('./src/templates/blogList.js'),
+    context: { blogInfo: rows },
+  });
 
-  for (const node of nodes) {
+
+  for (const row of rows) {
+    if (!row || typeof(row) !== 'object') continue;
     actions.createPage({
-      path: '/blogs/'+ node.slug,
+      path: '/blogs/'+ row.slug,
       component: path.resolve('./src/templates/blogDetail.js'),
-      context: node
+      context: row
     });
   }
 

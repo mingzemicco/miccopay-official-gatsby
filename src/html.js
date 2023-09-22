@@ -22,13 +22,13 @@ export default function HTML(props) {
         />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com/" />
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="" />
         <link rel="preload" as="style" href="/frontend-2f902131.css" />
         <link rel="stylesheet" href="/frontend-2f902131.css" />
         <script src="/init.js"></script>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} class="font-golos bg-body-bg text-body group/body theme-light">
+      <body {...props.bodyAttributes} className="font-golos bg-body-bg text-body group/body theme-light">
         <script src="/tabler-theme.min.js"></script>
         <script src="/navbar-shrink.js"></script>
         {props.preBodyComponents}

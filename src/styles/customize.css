@@ -1,28 +1,5 @@
 .site-header .miccopay-logo {
-}
-
-.site-header .logo-subtitle {
-  color: white;
-  font-size: 12px;
-  transform: scale(0.8);
-  left: 53px;
-  bottom: -10px;
-}
-
-.site-header .logo-subtitle .micco-logo {
-  max-height: 20px;
-}
-
-.site-header.lqd-is-sticky .logo-subtitle {
-  color: #7842eb;
-}
-
-.site-header.lqd-is-sticky .logo-subtitle .primary {
-  display: none;
-}
-
-.site-header.lqd-is-sticky .logo-subtitle .hidden {
-  display: block;
+  max-width: 170px;
 }
 
 #explanation .content .group p.title {
@@ -113,11 +90,8 @@ footer .qui-sommes-nous .content li {
     height: 36px;
   }
 
-  .site-header .logo-subtitle {
-    left: 0;
-    transform: scale(0.7);
-    bottom: -18px;
-    width: max-content;
+  .site-header .miccopay-logo {
+    max-width: 120px;
   }
 }
 

@@ -1,43 +1,12 @@
 import React from "react"
-import { BlogCard } from './blogs';
+import { BlogCard } from './blogList';
 import Layout from '../components/Layout';
 
-// export query
-export const query = graphql`
-  query mostRecent3Blogs {
-    blogs: allBlogsJson(sort: {order: DESC, fields: order}, limit: 3) {
-      nodes {
-        category
-        date
-        slug
-        title
-      }
-    }
 
-    images: allImageSharp {
-      edges {
-        node {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`
-
-export default function Index({ data }) {
-
-  const { blogs: { nodes }, images: { edges } } = data;
-  const fluids = edges.map(edge => edge.node.fluid);
-  for (const node of nodes) {
-    const idx = fluids.findIndex(fluid => fluid.src.includes(node.slug));
-    if (idx >= 0) {
-      node.fluid = fluids[idx];
-      fluids.splice(idx, 1);
-    }
-  }
+export default function Index(props) {
   
+  const { blogInfo } = props.pageContext || props.pathContext || {};
+
   return (
     <Layout index>
       <>
@@ -988,7 +957,7 @@ export default function Index({ data }) {
               className="grid gap-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10"
             >
               {
-                nodes.map(node => <BlogCard key={node.title} {...node} />)
+                Array.isArray(blogInfo) ? blogInfo.map(node => <BlogCard key={node.title} {...node} />) : null
               }
             </div>
             <div className="flex justify-center">

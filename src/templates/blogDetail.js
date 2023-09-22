@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from '../components/Layout';
-import Img from 'gatsby-image';
 import styles from '../styles/blogDetail.module.css';
 
 function Content ({ tag, content }) {
@@ -21,7 +20,7 @@ const ProjectDetails = ({ pageContext, pathContext }) => {
   const {
     title,
     subtitle,
-    fluid,
+    picUrl,
     tags,
     category,
     content,
@@ -66,7 +65,7 @@ const ProjectDetails = ({ pageContext, pathContext }) => {
       <section className="page-content">
         <div className="container mb-20">
           <div className="feature-image mb-10 mx-auto">
-            <Img fluid={fluid} className="w-full rounded-3xl" />
+            <img src={picUrl} alt="alt" className="w-full rounded-3xl" />
           </div>
           <div className={`content lg:w-9/12 w-full mx-auto ${styles.content}`}>
             {

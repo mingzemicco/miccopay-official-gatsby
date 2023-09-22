@@ -1,9 +1,7 @@
 import React from 'react';
-import Layout from '../../components/Layout';
-import { graphql } from 'gatsby';
-import Img from "gatsby-image";
+import Layout from '../components/Layout';
 
-export function BlogCard ({ slug, title, date, fluid }) {
+export function BlogCard ({ slug, title, date, picUrl }) {
   const href = `/blogs/${slug}`;
 
   return <article
@@ -11,7 +9,7 @@ export function BlogCard ({ slug, title, date, fluid }) {
   >
     <figure>
       <a href={href}>
-        <Img fluid={fluid} className="w-full h-40 object-cover rounded-t-2xl" />
+        <img src={picUrl} alt="iamge" className="w-full h-40 object-cover rounded-t-2xl" />
       </a>
     </figure>
     <div className="p-5 min-h-[180px] flex flex-col font-medium">
@@ -46,40 +44,8 @@ export function BlogCard ({ slug, title, date, fluid }) {
   </article>
 }
 
-// export query
-export const query = graphql`
-  query BlogsList {
-    blogs: allBlogsJson(sort: {order: DESC, fields: order}) {
-      nodes {
-        category
-        date
-        slug
-        title
-      }
-    }
-
-    images: allImageSharp {
-      edges {
-        node {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`
-
-export default function Blogs({ data }) {
-  const { blogs: { nodes }, images: { edges } } = data;
-  const fluids = edges.map(edge => edge.node.fluid);
-  for (const node of nodes) {
-    const idx = fluids.findIndex(fluid => fluid.src.includes(node.slug));
-    if (idx >= 0) {
-      node.fluid = fluids[idx];
-      fluids.splice(idx, 1);
-    }
-  }
+export default function Blogs({ pathContext, pageContext }) {
+  const { blogInfo } = pageContext || pathContext || {};
   return (
     <Layout>
       {/* Title */}
@@ -117,7 +83,7 @@ export default function Blogs({ data }) {
             className="grid gap-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-16"
           >
             {
-              nodes.map(item => <BlogCard key={item.title} {...item} />)
+              Array.isArray(blogInfo) ? blogInfo.map(item => <BlogCard key={item.title} {...item} />) : null
             }
           </div>
         </div>

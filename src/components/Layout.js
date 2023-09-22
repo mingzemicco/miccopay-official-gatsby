@@ -114,25 +114,14 @@ export default function Layout({ children, index }) {
             <a href="/">
               <img
                 className="miccopay-logo absolute top-1/2 start-0 opacity-0 -translate-y-1/2 translate-x-3 transition-all group-[.lqd-is-sticky]/header:opacity-100 group-[.lqd-is-sticky]/header:translate-x-0 peer"
-                src="/miccopay-logo.svg"
+                src="/miccopay-logo.png"
                 alt="MiccoPay logo"
               />
               <img
                 className="miccopay-logo transition-all group-[.lqd-is-sticky]/header:peer-first:opacity-0 group-[.lqd-is-sticky]/header:peer-first:translate-x-2"
-                src="/miccopay-logo-white.svg"
+                src="/miccopay-logo-white.png"
                 alt="MiccoPay logo white"
               />
-            </a>
-            <a href="https://getmicco.com/">
-              <div className="flex items-center logo-subtitle absolute">
-                POWERED BY
-                <img
-                  className="micco-logo primary"
-                  src="/micco-logo-white.png"
-                  alt="white miccopay logo"
-                />
-                <img src="/micco-logo.png" className="hidden micco-logo" alt="miccopay logo" />
-              </div>
             </a>
           </div>
           <div
@@ -146,7 +135,7 @@ export default function Layout({ children, index }) {
               className="inline-flex items-center relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-black hover:bg-black hover:text-white border-[2px] border-white !border-opacity-10 group-[.lqd-is-sticky]/header:border-black text-white group-[.lqd-is-sticky]/header:text-black group-[.lqd-is-sticky]/header:hover:text-white py-2 px-4 rounded-lg font-medium"
             >
               <span className="inline-flex items-center relative z-10">
-                Se connecter
+                Connexion
               </span>
             </a>
             <a
@@ -387,7 +376,7 @@ function createContactInput(config) {
       break;
     default:
   }
-  return `<div class="input-wrapper"><input name="${name}" placeholder="${placeholder}" required ${validity}></div>`;
+  return `<div className="input-wrapper"><input name="${name}" placeholder="${placeholder}" required ${validity}></div>`;
 }
 
 function getMailBody(formEl) {
@@ -421,7 +410,7 @@ function showContactForm() {
   let inputs = config.map(createContactInput).join("");
   inputs += `
     <button
-      class="mt-10 inline-flex items-center relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-black hover:bg-black hover:text-white border-[2px] border-[#343C57] bg-white bg-opacity-10 border-[2px] border-white border-opacity-0 hover:bg-white hover:bg-opacity-100 hover:!text-black py-4 px-7 rounded-xl font-semibold"
+      className="mt-10 inline-flex items-center relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-black hover:bg-black hover:text-white border-[2px] border-[#343C57] bg-white bg-opacity-10 border-[2px] border-white border-opacity-0 hover:bg-white hover:bg-opacity-100 hover:!text-black py-4 px-7 rounded-xl font-semibold"
       type="submit"
     >
       Envoyer
