@@ -9,7 +9,7 @@ function Content ({ tag, content }) {
       Node = <h2>{ content }</h2>;
       break;
     case 'p':
-      Node = <p>{ content }</p>;
+      Node = <p dangerouslySetInnerHTML={{ __html: content }}></p>;
       break;
   }
   if (!Node) return null;

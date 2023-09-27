@@ -376,7 +376,7 @@ function createContactInput(config) {
       break;
     default:
   }
-  return `<div className="input-wrapper"><input name="${name}" placeholder="${placeholder}" required ${validity}></div>`;
+  return `<div class="input-wrapper"><input name="${name}" placeholder="${placeholder}" required ${validity}></div>`;
 }
 
 function getMailBody(formEl) {
@@ -410,7 +410,7 @@ function showContactForm() {
   let inputs = config.map(createContactInput).join("");
   inputs += `
     <button
-      className="mt-10 inline-flex items-center relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-black hover:bg-black hover:text-white border-[2px] border-[#343C57] bg-white bg-opacity-10 border-[2px] border-white border-opacity-0 hover:bg-white hover:bg-opacity-100 hover:!text-black py-4 px-7 rounded-xl font-semibold"
+      class="mt-10 inline-flex items-center relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-black hover:bg-black hover:text-white border-[2px] border-[#343C57] bg-white bg-opacity-10 border-[2px] border-white border-opacity-0 hover:bg-white hover:bg-opacity-100 hover:!text-black py-4 px-7 rounded-xl font-semibold"
       type="submit"
     >
       Envoyer
