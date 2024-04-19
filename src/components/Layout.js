@@ -382,7 +382,7 @@ export default function Layout({ children, index }) {
               <ul className="flex flex-wrap items-center gap-7 text-[14px] max-sm:justify-center">
                 <li>
                   <a
-                    href="https://www.linkedin.com/company/miccopay"
+                    href="https://www.linkedin.com/company/platbook"
                     className="inline-flex items-center gap-2"
                   >
                     <svg
