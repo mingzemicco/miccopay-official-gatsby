@@ -12,23 +12,33 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <title>
-          Commande et paiement simplifiés : MiccoPay, votre solution tout-en-un pour
-          les restaurants
+          Scan and visualize the menu in no matter which restaurant in the
+          world.
         </title>
-        <meta name="keywords" content="paiement en ligne, prise de commande, " />
+        <meta
+          name="keywords"
+          content="Scan Menu, translate automatic the plates, OCR, show plat,menu,dish images, intelligent AI food solution for tourist and travelers "
+        />
         <meta
           name="description"
-          content="Simplifiez le paiement au restaurant avec une solution digitale qui permet à vos clients de commander et payer facilement en quelques secondes en scannant un QR code. Optez pour la solution de paiement adaptée à votre restaurant pour une expérience fluide et rapide."
+          content="PlatBook helps you translate and visualize the correct image of the dishes/plates in any restaurants, it makes easy for travellers to enjoy every meal, no surprise"
         />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com/" />
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com/"
+          crossOrigin=""
+        />
         <link rel="preload" as="style" href="/frontend-2f902131.css" />
         <link rel="stylesheet" href="/frontend-2f902131.css" />
         <script src="/init.js"></script>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} className="font-golos bg-body-bg text-body group/body theme-light">
+      <body
+        {...props.bodyAttributes}
+        className="font-golos bg-body-bg text-body group/body theme-light"
+      >
         <script src="/tabler-theme.min.js"></script>
         <script src="/navbar-shrink.js"></script>
         {props.preBodyComponents}
