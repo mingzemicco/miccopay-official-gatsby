@@ -4,7 +4,7 @@ require("dotenv").config()
 const SHEET_ID =
   process.env.SHEET_ID ?? "10VWdzJTEzmQDixlSX2nRlo-IIvVBVyKUNBj5S_kcTp4"
 
-const SHEET_NAME = process.env.SHEET_NAME ?? "miccopay"
+const SHEET_NAME = process.env.SHEET_NAME ?? "platbook"
 
 const Title = {
   ORDER: "order",
