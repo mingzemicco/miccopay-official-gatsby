@@ -230,8 +230,6 @@ export default function Index(props) {
                   </figure>
                   <div className="pt-6 relative shrink">
                     <h4 className="mb-3 font-bold">
-                      Personnalisation du
-                      <br />
                       Foodie Community
                     </h4>
                     <p className="text-[14px]">
