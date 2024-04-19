@@ -67,9 +67,9 @@ export default function Index(props) {
                 <br />
                 before ordering!
               </p>
-{/* <div className="transition-all delay-[450ms] opacity-0 translate-y-3 group-[.page-loaded]/body:opacity-100 group-[.page-loaded]/body:translate-y-0">
+ <div className="transition-all delay-[450ms] opacity-0 translate-y-3 group-[.page-loaded]/body:opacity-100 group-[.page-loaded]/body:translate-y-0">
                 <a
-                  href=""
+                  href="#"
                   className="inline-flex items-center relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-black hover:bg-black hover:text-white border-[2px] border-[#343C57] bg-[#343C57] text-white py-4 px-7 rounded-xl font-semibold"
                   target="_blank"
                   rel="noreferrer"
@@ -88,7 +88,7 @@ export default function Index(props) {
                     Coming soon!
                   </span>
                 </a>
-              </div> */}
+              </div>
               <br />
             </div>
           </div>
