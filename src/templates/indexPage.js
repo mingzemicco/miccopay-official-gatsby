@@ -205,7 +205,7 @@ export default function Index(props) {
                     <img
                       className="-mx-8 max-w-[calc(100%+4rem)]"
                       src="/5.dishDiary.png"
-                      alt="Intégration facile"
+                      alt="Dish Diary"
                       width="696"
                       height="426"
                     />
@@ -223,7 +223,7 @@ export default function Index(props) {
                     <img
                       className="-mx-8 max-w-[calc(100%+4rem)]"
                       src="/6.foodieCommunity.png"
-                      alt="Personnalisation du QR code"
+                      alt="Foodie Community"
                       width="696"
                       height="426"
                     />
@@ -232,7 +232,7 @@ export default function Index(props) {
                     <h4 className="mb-3 font-bold">
                       Personnalisation du
                       <br />
-                      QR code
+                      Foodie Community
                     </h4>
                     <p className="text-[14px]">
                       Share and connect with fellow travelers and food lovers in
