@@ -414,7 +414,7 @@ export default function Layout({ children, index }) {
                 All rights reserved
               </p>
               <p className="text-center mb-4">
-                Privicay Policy
+                <a href="https://www.platbookapp.com/blogs/privacy-policy">Privicay Policy</a>
                 <span className="inline-block ml-3">
                   <img
                     className="inline-block"
