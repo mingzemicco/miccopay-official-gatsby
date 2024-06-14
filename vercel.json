@@ -1,5 +1,5 @@
 {
   "redirects": [
-    { "source": “/download”, "destination": "https://m34tw3qr8j.execute-api.eu-west-3.amazonaws.com/", "permanent": false }
+    { "source": "/download", "destination": "https://m34tw3qr8j.execute-api.eu-west-3.amazonaws.com/", "permanent": false }
   ]
 }
